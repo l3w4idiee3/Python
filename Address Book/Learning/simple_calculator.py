@@ -14,7 +14,8 @@ def arithmetic_operations():
     valid_choices = ['1', '2','3', '4']
     if choice not in valid_choices:
         print("Invalid choice")
-        return
+        choice = input("Enter your choice (1/2/3/4) ")
+        
     x, y = user_prompt()
     
     if choice == '1':
@@ -28,8 +29,9 @@ def arithmetic_operations():
         print("Result: ", result)
     elif choice == '4':
         try:
-            result = float(x / y)
-            print("Result: ", result)
+            if y != 0:
+                result = float(x / y)
+                print("Result: ", result)
         except ZeroDivisionError:
             print("Invalid division")
         except TypeError:
