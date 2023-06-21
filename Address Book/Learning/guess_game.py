@@ -8,7 +8,7 @@ def guess_number_game():
         attempts += 1
         prompt = int(input("Enter your guess: "))
         if prompt == randomNumber:
-            guesseCorrectly = True
+            
             print("Congratulation you have guessed correctly!!!")
         elif prompt < randomNumber:
             print("Your number is too low")
