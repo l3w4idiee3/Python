@@ -1,4 +1,5 @@
 import sys
+#sys.stderr and sys.stdout are not used directly
 def calculate_sum():
     total_sum = 0
     while True:
